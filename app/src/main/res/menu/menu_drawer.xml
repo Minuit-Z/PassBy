@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_step"
+            android:checked="true"
+            android:icon="@drawable/ic_home_24dp"
+            android:title="计步" />
+        <item
+            android:id="@+id/drawer_mapAR"
+            android:icon="@drawable/ic_star_24dp"
+            android:title="地图/AR" />
+        <item
+            android:id="@+id/drawer_share"
+            android:icon="@drawable/ic_settings_24dp"
+            android:title="好友" />
+        <item
+            android:title="主题"
+            android:id="@+id/drawer_style"
+            android:icon="@drawable/ic_ar"
+            />
+    </group>
+</menu>

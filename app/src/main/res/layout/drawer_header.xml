@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_root"
+    android:layout_height="@dimen/header_layout_height"
+    android:background="@drawable/drawer_background"
+    android:clickable="false"
+    android:paddingTop="@dimen/status_bar_height"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/img_pic"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:elevation="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/drawer_avatar"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:text="Gonzalo Toledano"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/img_pic"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_weather"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/img_pic"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tv_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123ddd"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_alignStart="@+id/img_weather" />
+
+</RelativeLayout>

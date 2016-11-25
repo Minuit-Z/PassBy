@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ziye.passby.AddFriendActivity">
+
+    <include
+        android:id="@+id/tb_addfriend"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_addfriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_addfriend"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:textColorHint="#c5c5c5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_edit"
+                android:id="@+id/et_name"
+                android:hint="请输入要查找的用户"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_addfriend_seek"
+            android:text="查找"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_addfriend"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/ll_addfriend"
+        android:layout_width="match_parent"
+        android:layout_height="440dp">
+
+    </ListView>
+
+</RelativeLayout>

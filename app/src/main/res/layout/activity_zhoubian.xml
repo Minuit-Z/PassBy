@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Zhoubian">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+    </com.baidu.mapapi.map.MapView>
+
+    <Button
+        android:id="@+id/button_AR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dip"
+        android:onClick="mark"
+        android:text="AR景点标记" />
+
+    <Button
+        android:id="@+id/button_MyPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_AR"
+        android:layout_toLeftOf="@+id/button_AR"
+        android:layout_toStartOf="@+id/button_AR"
+        android:onClick="loc"
+        android:text="我的位置" />
+
+    <RelativeLayout
+        android:id="@+id/id_maker_ly"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff0000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/id_info_img"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/img_border"
+            android:scaleType="fitXY"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
